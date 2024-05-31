@@ -15,5 +15,8 @@
         {
             Console.WriteLine("???");
         }
+
+        public override string Stats() =>
+            base.Stats() + $"\nIsPoisonous:\t\t{IsPoisonous}";
     }
 }

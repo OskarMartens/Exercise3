@@ -12,5 +12,13 @@
         {
             FishEatCount = fishEatCount;
         }
+
+        public override void DoSound()
+        {
+            Console.WriteLine("Squack!");
+        }
+
+        public override string Stats() =>
+            base.Stats() + $",\nFishEatCount:\t\t{FishEatCount}";
     }
 }

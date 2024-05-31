@@ -14,5 +14,10 @@
         {
             Console.WriteLine("Woof!");
         }
+
+        public String Fetch() => $"{Name} brought you a stick!";
+
+        public override string Stats() =>
+            base.Stats() + $",\nIsKind:\t\t\t{IsKind}";
     }
 }

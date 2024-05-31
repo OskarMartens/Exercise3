@@ -12,5 +12,8 @@
         {
             Color = color;
         }
+
+        public override string Stats() =>
+            base.Stats() + $",\nColor:\t\t\t{Color}";
     }
 }

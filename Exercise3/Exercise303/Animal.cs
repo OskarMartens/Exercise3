@@ -8,6 +8,7 @@
         public int Weight { get; set; }
         public bool IsVertebrate { get; private set; }
 
+
         protected Animal(string name, string latinName, int age, int weight, bool isVertebrate)
         {
             Name = name;
@@ -18,5 +19,8 @@
         }
 
         public abstract void DoSound();
+
+        public virtual string Stats() => $"Name:\t\t\t{Name},\nLatinName:\t\t{LatinName}," +
+            $"\nAge:\t\t\t{Age},\nWeight:\t\t\t{Weight},\nIsVertebrate:\t\t{IsVertebrate}";
     }
 }

@@ -15,5 +15,8 @@
         {
             Console.WriteLine("Neigh!");
         }
+
+        public override string Stats() =>
+            base.Stats() + $",\nWearingHorseShoes:\t{WearingHorseShoes}";
     }
 }

@@ -1,4 +1,4 @@
-﻿using Exercise3.Exercise1;
+﻿using Exercise3.Exercise301;
 
 namespace Exercise3.Test.Exercise1
 {

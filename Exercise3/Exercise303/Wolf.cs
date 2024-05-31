@@ -16,5 +16,8 @@
         {
             Console.WriteLine("Aaah-ooooooooooooooh!");
         }
+
+        public override string Stats() =>
+            base.Stats() + $"\nColor:\t\t\t{Color}";
     }
 }

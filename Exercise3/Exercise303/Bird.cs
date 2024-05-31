@@ -4,6 +4,7 @@
     {
         public int Wingspan { get; set; }
         public bool Flightless { get; set; }
+
         public Bird(string name, int age, int weight, int wingspan, bool flightless)
             : this(name, "Aves", age, weight, wingspan, flightless) { }
 
@@ -17,5 +18,9 @@
         {
             Console.WriteLine("Chirp!");
         }
+
+        public override string Stats() =>
+            base.Stats() + $",\nWingspan:\t\t{Wingspan},\nFlightless:\t\t{Flightless}";
+
     }
 }

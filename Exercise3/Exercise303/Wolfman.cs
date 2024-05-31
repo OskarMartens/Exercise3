@@ -7,7 +7,7 @@
 
         public void Talk()
         {
-            Console.WriteLine("AAAAHHHHH!");
+            Console.WriteLine("Hello, I am a wolf man");
         }
     }
 }

@@ -15,5 +15,8 @@
         {
             Console.WriteLine("Squeak squeak.");
         }
+
+        public override string Stats() =>
+            base.Stats() + $",\nNumberOfSpikes:\t\t{NumberOfSpikes}";
     }
 }
